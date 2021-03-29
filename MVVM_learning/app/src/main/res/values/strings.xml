@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MVVM_learning</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_attendance">Today Attendance</string>
+    <string name="menu_keyin_attendance">Key in Attendance</string>
+    <string name="menu_absence">Today Absence</string>
+    <string name="menu_record_by_date">Record by Date</string>
+    <string name="menu_record_by_month">Record by Month</string>
+    <string name="menu_record_by_year">Record by Year</string>
+
+    <string name="menu_daily_attendance">Daily Attendance</string>
+    <string name="menu_monthly_attendance">Monthly Attendance</string>
+    <string name="menu_year_attendance">Annual Attendance</string>
+
+
+    <string name="title_activity_teacher">teacher</string>
+
+</resources>

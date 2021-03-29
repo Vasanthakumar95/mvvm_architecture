@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mvvm_learning.ui.teacher.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_teacher_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_attendance"
+            app:destination="@id/nav_attendance"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_attendance"
+        android:name="com.example.mvvm_learning.ui.teacher.AttendanceFragment"
+        android:label="@string/menu_attendance"
+        tools:layout="@layout/fragment_teacher_attendance" >
+        <action
+            android:id="@+id/action_nav_attendance_to_nav_absence"
+            app:destination="@id/nav_absence" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_absence"
+        android:name="com.example.mvvm_learning.ui.teacher.AbsenceFragment"
+        android:label="@string/menu_absence"
+        tools:layout="@layout/fragment_teacher_absence" >
+        <action
+            android:id="@+id/action_nav_absence_to_nav_input_attendance"
+            app:destination="@id/nav_input_attendance" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_input_attendance"
+        android:name="com.example.mvvm_learning.ui.teacher.keyinattendanceFragment"
+        android:label="@string/menu_absence"
+        tools:layout="@layout/fragment_teacher_input_attendance" >
+        <action
+            android:id="@+id/action_nav_input_attendance_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+</navigation>

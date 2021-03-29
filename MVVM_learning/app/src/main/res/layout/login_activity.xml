@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="LoginActivityViewModel"
+            type="com.example.mvvm_learning.viewModels.LoginActivityViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:context=".LoginActivity">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="10dp">-->
+<!--            android:id="@+id/editTextUsername"-->
+<!--            android:text="@={LoginActivityViewModel.username}"-->
+<!--            android:id="@+id/editTextPassword"-->
+<!--            android:text="@={LoginActivityViewModel.password}"-->
+<!--            android:id="@+id/buttonLogin"-->
+<!--            android:onClick="@{() -> LoginActivityViewModel.loginapi()}"-->
+
+
+            <RelativeLayout
+                android:id="@+id/loginLayout"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/login_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="Account Login"
+                    android:textColor="@color/colorFlatBlueText"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="30dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="email" />
+
+                        <EditText
+                            android:id="@+id/editTextUsername"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:drawableLeft="@drawable/ic_baseline_email_24"
+                            android:drawablePadding="10dp"
+                            android:hint="john@gmail.com"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:text="@={LoginActivityViewModel.username}" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="password" />
+
+                        <EditText
+                            android:id="@+id/editTextPassword"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_baseline_lock_24"
+                            android:drawablePadding="10dp"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:text="@={LoginActivityViewModel.password}" />
+
+
+                        <TextView
+                            android:id="@+id/text_view_forget_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingTop="5dp"
+                            android:text="Forgot Password?" />
+
+
+                        <Button
+                            android:id="@+id/buttonLogin"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="22dp"
+                            android:background="@color/colorFlatBlueText"
+                            android:onClick="@{() -> LoginActivityViewModel.loginapi()}"
+                            android:text="Log in"
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/user_profile_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/login_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_round_account_circle_24"
+                    android:elevation="4dp"
+                   />
+
+            </RelativeLayout>
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextUsername"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:drawablePadding="5dp"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:hint="USERNAME"-->
+<!--                android:text="@={LoginActivityViewModel.username}"-->
+<!--                android:inputType="text" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextPassword"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:drawablePadding="5dp"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:hint="PASSWORD"-->
+<!--                android:text="@={LoginActivityViewModel.password}"-->
+<!--                android:inputType="textPassword" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonLogin"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="LOGIN"-->
+<!--                android:textSize="18sp"-->
+<!--                android:onClick="@{() -> LoginActivityViewModel.loginapi()}"/>-->
+
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+</layout>

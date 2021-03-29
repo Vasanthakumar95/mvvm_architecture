@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="colorFlatBlueText">#343f4b</color>
+
+    <color name="transparent_white">#00FFFFFF</color>
+    <!--  Basic Colors  -->
+    <color name="colorWhite">#ffffff</color>
+
+    <!--  Color according to user type  -->
+    <color name="colorFlatKPM">#f9c500</color>
+    <color name="colorFlatJPN">#ff9000</color>
+    <color name="colorFlatPPD">#ff5001</color>
+
+    <color name="colorFlatSchoolAdmin">#8bca01</color>
+    <color name="colorFlatTeacher">#007fb2</color>
+    <color name="colorFlatParents">#7636a8</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/ic_baseline_done_24"
+            android:title="@string/menu_attendance" />
+        <item
+            android:id="@+id/nav_absence"
+            android:icon="@drawable/ic_baseline_close_24"
+            android:title="@string/menu_absence" />
+
+        <item
+            android:id="@+id/nav_input_attendance"
+            android:icon="@drawable/ic_baseline_how_to_reg_24"
+            android:title="@string/menu_keyin_attendance" />
+    </group>
+
+</menu>
