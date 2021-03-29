@@ -39,29 +39,7 @@ import retrofit2.Response;
 
 public class AbsenceFragment extends Fragment {
 
-    /// change table top br color to red
-    /// change table gravity same as attend fragment's table
-    /// select student and button contact bring down to bottom (following the student list)
-    /// change side navigation bar replace Attendance with Today's Attendance. (same with absent).
-
-
-//    String login_id = login.getCurrentUser();
-
-//    String[] contact_type = new String[]{"Phone", "Whatsapp", "E-mail"};
-//    public String temp1,temp2,temp3, class_id, temp_student_id;
-//    String temp_parent_num, parent_num_selected, msg_to_parents;
-//    String parent_email, parent_name;
-//    int count;
-//    TableLayout find_table;
-//    TableRow new_row;
-//
-//
-//    Button select_s, contact;
-//
-//    TextView id;
-//    TextView name;
-//
-//    String[] ta;
+   
 
     private ListView listView;
 
