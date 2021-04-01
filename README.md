@@ -1,5 +1,11 @@
 # mvvm_architecture
-A simple MVVM architecture, with live data. 
+A simple app
+- MVVM architecture 
+- Live data
+- PHP & MySql
+- Slim framework Api
+- Amazon AWS-ec2 instance for hosting
+- Leak Canary(Memory Leak Testing)
 
 # UI Screenshots
 
