@@ -1,5 +1,5 @@
 # mvvm_architecture
-A simple app
+A simple attendance android app 
 - MVVM architecture 
 - Live data
 - PHP & MySql
