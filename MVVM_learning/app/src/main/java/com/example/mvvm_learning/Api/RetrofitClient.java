@@ -5,17 +5,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
-    //change according to current IP
-    // 13.58.111.54(aws)
-    // 192.168.43.201(vasant-phone)
-    // 10.193.151.111(wifi-makerlab)
-    // 10.24.0.105(UKM_WIFI_2)
-    // 10.24.8.165(UKM_WIFI_KKM)
-    // 10.24.0.36 (UKM WARGA)
-    // 10.1.156.23(pkukmweb.ukm.my)
-    // aws* must change with each restart of instances
 
-    private static final String BASE_URL = "http://ec2-54-209-165-18.compute-1.amazonaws.com/SAS_API/public/";
+
+    private static final String BASE_URL = "xxx.xxx.xxx.xxx/SAS_API/public/";
     private static RetrofitClient mInstance;
     private Retrofit retrofit;
 
